@@ -17,17 +17,6 @@ This project is a demo for room reservation system
 - run `npm run dev`.
 
 
-
-## Fueatures
-- Users Management
-- Buldings Management
-- Rooms Management
-- Seasons Management
-- AddOns Management
-- Reservations Management
-- Interactive and realtime User Reservation layout 
-
-
 ### 1- Admin
 - Open the url `/dashboard/login`
 - Login with the following credentials
@@ -44,6 +33,18 @@ This project is a demo for room reservation system
 - Open the url `/`
 - Start following the steps to make a reservation
 - In the end you shoud get a thank you message
+
+
+
+
+## Fueatures
+- Users Management
+- Buldings Management
+- Rooms Management
+- Seasons Management
+- AddOns Management
+- Reservations Management
+- Interactive and realtime User Reservation layout 
 
 
 
