@@ -191,23 +191,22 @@ class ReservationPanel extends Component implements HasForms
         $inSeasonDays = 0;
 
         // get the price of the room and the days included in each season
-         $seasons_room = SeasonsRooms::where('room_id', $this->room_id)->get();
+        $seasons_room = SeasonsRooms::where('room_id', $this->room_id)->get();
         foreach ($seasons_room as $season_room) {
 
             $season = $season_room->Season;
-            
+             
             $start_season = Carbon::parse($season->start_date);
             $end_season = Carbon::parse($season->end_date);
 
             $start = Carbon::parse($this->start_date);
             $end = Carbon::parse($this->end_date);
 
-            // calculate the days between the start and end date
             $start_date_in_season = $start->max($start_season);
             $end_date_in_season = $end->min($end_season);
 
             $days = $start_date_in_season->diffInDays($end_date_in_season);
-            
+
             $this->duration_price += $season_room->price * $days;
 
             $this->SeasonDays[$season->id][1] = $days;

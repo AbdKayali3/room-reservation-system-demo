@@ -16,26 +16,26 @@ class SeasonsSeeder extends Seeder
     {
         Seasons::factory()->create([
             'name' => "Summer",
-            'start_date' => "2021-06-01",
-            'end_date' => "2021-08-31",
+            'start_date' => "2024-06-01",
+            'end_date' => "2024-08-31",
         ]);
         
         Seasons::factory()->create([
             'name' => "Winter",
-            'start_date' => "2021-12-01",
-            'end_date' => "2022-02-28",
+            'start_date' => "2023-12-01",
+            'end_date' => "2024-02-28",
         ]);
 
         Seasons::factory()->create([
             'name' => "Spring",
-            'start_date' => "2021-03-01",
-            'end_date' => "2021-05-31",
+            'start_date' => "2024-03-01",
+            'end_date' => "2024-05-31",
         ]);
 
         Seasons::factory()->create([
             'name' => "Autumn",
-            'start_date' => "2021-09-01",
-            'end_date' => "2021-11-30",
+            'start_date' => "2024-09-01",
+            'end_date' => "2024-11-30",
         ]);
     }
 }
